@@ -12,7 +12,8 @@ cognome:string=''
 email: any='';
 password: any='';
 username: any='';
-immagineProfilo: any=''
+immagineProfilo: any='';
+bio:any=''
 
 
 @ViewChild('f',{static:true}) form!:NgForm;
