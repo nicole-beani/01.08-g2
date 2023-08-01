@@ -9,5 +9,11 @@ import { NgForm } from '@angular/forms';
 export class ViewChildComponent {
   user: any='';
   pasw: any='';
+
+  @ViewChild('s',{static:true}) form!:NgForm;
+submit(form:NgForm){
+  console.log(form);
+ this.form.reset();
+}
 }
 
