@@ -1,0 +1,82 @@
+<form (ngSubmit)="submit(f)" #f="ngForm">
+  <div class="form-group">
+    <input
+      type="text"
+      ngModel
+      class="form-control"
+      placeholder="Il tuo nome"
+      required
+      name="nome"
+      [(ngModel)]="nome"
+    />
+  </div>
+  <div class="form-group">
+    <input
+      type="text"
+      ngModel
+      class="form-control"
+      placeholder="Il tuo cognome"
+      name="cognome"
+      [(ngModel)]="cognome"
+    />
+  </div>
+
+  <div class="form-group col-6">
+    <input
+      type="email"
+      ngModel
+      class="form-control"
+      placeholder="La tua email"
+      name="email"
+      [(ngModel)]="email"
+    />
+  </div>
+  <div class="form-group col-6">
+    <input
+      type="password"
+      ngModel
+      class="form-control"
+      placeholder="La tua password"
+      name="password"
+      [(ngModel)]="password"
+    />
+  </div>
+
+  <div class="form-row row">
+    <div class="form-group col-6">
+      <select name="genere" ngModel class="form-control">
+        <option value="">--genere--</option>
+        <option value="Uomo">Uomo</option>
+        <option value="Donna">Donna</option>
+        <option value="Preferico non rispondere">
+          Preferisco non rispondere
+        </option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <input
+      type="file"
+      ngModel
+      class="form-control"
+      placeholder="Immagine profilo"
+      name="Img profilo"
+      [(ngModel)]="immagineProfilo"
+    />
+  </div>
+  <div>
+    <p><label>Biografia:</label></p>
+    <textarea rows="4" cols="70" ngModel class="form-control"> </textarea>
+  </div>
+  <div class="form-group">
+    <input
+      type="text"
+      ngModel
+      class="form-control"
+      placeholder="Il tuo username"
+      name="username"
+      [(ngModel)]="username"
+    />
+  </div>
+  <button class="bts btn-success">Submit</button>
+</form>
